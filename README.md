@@ -87,21 +87,18 @@ Update API credentials in the respective files:
 
 **Option 1: Location Selection Interface**
 ```bash
-cd "NASA Space Apps"
 python "Mapa define local.py"
 ```
 Access at `http://localhost:5000` to select target coordinates.
 
 **Option 2: Satellite Tracking Interface**
 ```bash
-cd "NASA Space Apps"
 python "Mapa calcula órbita.py"
 ```
 View real-time satellite positions and orbital paths at `http://localhost:5000`.
 
 **Option 3: Retrieve Satellite Imagery**
 ```bash
-cd "NASA Space Apps"
 python apinasa.py
 ```
 Generates `landsat_image.png` for the coordinates stored in `latitude.txt` and `longitude.txt`.
@@ -135,7 +132,7 @@ Generates `landsat_image.png` for the coordinates stored in `latitude.txt` and `
 
 - Add database persistence instead of flat file storage
 - Implement user authentication and location history
-- Support additional satellite constellations (Sentinel-2, MODAS)
+- Support additional satellite constellations (Sentinel-2, MODIS)
 - Create notification system for upcoming favorable passes
 - Add time-lapse generation from historical imagery
 - Implement client-side caching to reduce API calls
